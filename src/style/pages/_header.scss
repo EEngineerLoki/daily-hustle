@@ -1,0 +1,132 @@
+.header {
+   left: 0;
+   padding: 0.3rem;
+   position: absolute;
+   width: 100%;
+   z-index: 100;
+   background-color: var(--black);
+
+   @media screen and (min-width: 769px) {
+      padding: 12 32px 0px;
+   }
+
+   &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   &__logo img {
+      z-index: 90;
+      width: 20%;
+
+      @media screen and (max-width: 769px) {
+         width: 20%;
+      }
+   }
+
+   &__list {
+      width: 100%;
+      margin-top: 40px;
+
+      @media screen and (min-width: 769px) {
+         display: grid;
+         grid-template-columns: repeat(4, 180px);
+         align-items: center;
+      }
+   }
+
+   @media screen and (min-width: 769px) {
+      &__item {
+         font-family: var(--fontParagraph);
+         text-transform: uppercase;
+         text-align: center;
+         padding-bottom: 20px;
+         color: var(--white);
+         font-size: 13.25px;
+         letter-spacing: 1.5px;
+
+         &:hover {
+            // transition: 350ms ease-out;
+            color: var(--secondary);
+            border-bottom: 3px solid var(--secondary);
+         }
+
+         :active {
+            color: var(--secondary);
+            border-bottom: 3px solid var(--secondary);
+         }
+      }
+   }
+
+   &__menu {
+      width: 100%;
+   }
+
+   @media screen and (max-width: 768px) {
+      &__socialIcon {
+         display: flex;
+         align-self: center;
+         justify-self: center;
+         margin-top: 100px;
+
+         &__link {
+            margin: 0 20px;
+         }
+      }
+
+      &__item {
+         font-family: var(--fontParagraph);
+         color: var(--white);
+         letter-spacing: 2px;
+         font-size: 20px;
+         padding: 20px 0;
+         border-top: 1px solid var(--defaultTheme);
+         text-align: center;
+
+         &:nth-child(4) {
+            border-bottom: 1px solid var(--defaultTheme);
+         }
+      }
+
+      &__overlay {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100vh;
+         background-color: var(--black);
+         z-index: -1;
+         transition: all 350ms ease-in-out;
+         animation: overlayIn 350ms ease-in-out forwards;
+      }
+
+      &__menu {
+         position: absolute;
+         right: 0;
+         left: 0;
+         top: 108px;
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: auto;
+         justify-items: center;
+         background-color: transparent;
+         border-radius: 0.3125rem;
+         width: 100%;
+         transition: all 0.55s ease-in-out;
+         z-index: 5;
+         height: 61vh;
+         opacity: 0;
+         visibility: hidden;
+         transform: translateY(18px);
+         transition: all 350ms ease-out;
+         padding: 0 35px;
+
+         &.menu-active {
+            transform: translate(0);
+            opacity: 1;
+            visibility: visible;
+         }
+      }
+   }
+}

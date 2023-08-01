@@ -1,0 +1,95 @@
+.home {
+    position: relative;
+    padding: 0 2rem 0;
+    background: var(--homeGradient);
+ 
+    &::before {
+       position: absolute;
+       content: '';
+       right: 0;
+       top: clamp(12.25rem, 37vw, 21.5625rem);
+       background-color: var(--softBlue);
+       height: clamp(12.625rem, 30vw, 22.1875rem);
+       width: clamp(20rem, 35vw, 33rem);
+       z-index: -1;
+       border-bottom-left-radius: 9.5rem;
+       border-top-left-radius: 9.5rem;
+    }
+ 
+    &__container {
+       padding: 9.0625rem 0 4.78125rem 0;
+ 
+       @media screen and (min-width: 769px) {
+          padding: 12.1875rem 0 2.90625rem 0;
+       }
+    }
+ 
+    &__wrapper {
+       @media screen and (min-width: 769px) {
+          display: flex;
+          flex-direction: row-reverse;
+       }
+    }
+ 
+    &__image {
+       img {
+          width: 100%;
+       }
+       @media screen and (min-width: 769px) {
+          img {
+             max-width: 93%;
+             margin-left: 5rem;
+          }
+       }
+       flex: 1;
+    }
+ 
+    &__title {
+       font-size: clamp(1.9375rem, 5vw, 2.9375rem);
+       font-weight: var(--fontSemiBold);
+       letter-spacing: -0.4px;
+       line-height: 2.1875rem;
+       margin-bottom: 1.1875rem;
+       text-align: center;
+ 
+       @media screen and (min-width: 769px) {
+          line-height: 3.5625rem;
+       }
+    }
+ 
+    &__paragraph {
+       font-size: clamp(0.9375rem, 4vw, 1.0625rem);
+       line-height: 2;
+       max-width: 50rem;
+       text-align: justify;
+ 
+       @media screen and (min-width: 769px) {
+          line-height: 2rem;
+       }
+    }
+ 
+    &__intro {
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+       margin-top: 4.75rem;
+ 
+       @media screen and (min-width: 769px) {
+          flex: 1;
+          text-align: left;
+          align-items: center;
+          justify-content: flex-start;
+          padding: 0;
+          margin-top: 13rem;
+       }
+    }
+ 
+    &__cta__wrapper {
+       font-family: var(--fontParagraph);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 1.0625rem;
+       margin-top: 1.625rem;
+    }
+}
