@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.3f407006.css",
-    "main.js": "/static/js/main.8906d308.js",
-    "static/media/seneca.png": "/static/media/seneca.233a973414d15c61be5e.png",
-    "static/media/AtomicHabits.png": "/static/media/AtomicHabits.8a9e24e59a5ec64cf519.png",
-    "static/media/ThinkingFastAndSlow.png": "/static/media/ThinkingFastAndSlow.1617bd57851bcc3e6f3e.png",
-    "static/media/SurroundedByIdiots.png": "/static/media/SurroundedByIdiots.c57a4685567dd10aa7c7.png",
-    "static/media/MARKETING LOGO clear.png": "/static/media/MARKETING LOGO clear.df58a147ad90acf334f5.png",
-    "static/media/LawsPower.png": "/static/media/LawsPower.cd45333e1bbbfb04b81b.png",
-    "static/media/DailyStoic.png": "/static/media/DailyStoic.b6ac6ef1315d659244d4.png",
-    "static/media/Principles.png": "/static/media/Principles.538ea49e93a949ae49ec.png",
-    "index.html": "/index.html",
-    "main.3f407006.css.map": "/static/css/main.3f407006.css.map",
-    "main.8906d308.js.map": "/static/js/main.8906d308.js.map"
+    "main.css": "/http%20://EEngineerLoki.github.io/daily-hustle/static/css/main.3f407006.css",
+    "main.js": "/http%20://EEngineerLoki.github.io/daily-hustle/static/js/main.211d002d.js",
+    "static/media/seneca.png": "/http%20://EEngineerLoki.github.io/daily-hustle/static/media/seneca.233a973414d15c61be5e.png",
+    "static/media/AtomicHabits.png": "/http%20://EEngineerLoki.github.io/daily-hustle/static/media/AtomicHabits.8a9e24e59a5ec64cf519.png",
+    "static/media/ThinkingFastAndSlow.png": "/http%20://EEngineerLoki.github.io/daily-hustle/static/media/ThinkingFastAndSlow.1617bd57851bcc3e6f3e.png",
+    "static/media/SurroundedByIdiots.png": "/http%20://EEngineerLoki.github.io/daily-hustle/static/media/SurroundedByIdiots.c57a4685567dd10aa7c7.png",
+    "static/media/MARKETING LOGO clear.png": "/http%20://EEngineerLoki.github.io/daily-hustle/static/media/MARKETING LOGO clear.df58a147ad90acf334f5.png",
+    "static/media/LawsPower.png": "/http%20://EEngineerLoki.github.io/daily-hustle/static/media/LawsPower.cd45333e1bbbfb04b81b.png",
+    "static/media/DailyStoic.png": "/http%20://EEngineerLoki.github.io/daily-hustle/static/media/DailyStoic.b6ac6ef1315d659244d4.png",
+    "static/media/Principles.png": "/http%20://EEngineerLoki.github.io/daily-hustle/static/media/Principles.538ea49e93a949ae49ec.png",
+    "index.html": "/http%20://EEngineerLoki.github.io/daily-hustle/index.html",
+    "main.3f407006.css.map": "/http%20://EEngineerLoki.github.io/daily-hustle/static/css/main.3f407006.css.map",
+    "main.211d002d.js.map": "/http%20://EEngineerLoki.github.io/daily-hustle/static/js/main.211d002d.js.map"
   },
   "entrypoints": [
     "static/css/main.3f407006.css",
-    "static/js/main.8906d308.js"
+    "static/js/main.211d002d.js"
   ]
 }
