@@ -1,0 +1,33 @@
+.books {
+    position: relative;
+    padding: 0 2rem 0;
+    background: var(--homeGradient);
+ 
+    &::before {
+       position: absolute;
+       content: '';
+       right: 0;
+       top: clamp(12.25rem, 37vw, 21.5625rem);
+       background-color: var(--softBlue);
+       height: clamp(12.625rem, 30vw, 22.1875rem);
+       width: clamp(20rem, 35vw, 33rem);
+       z-index: -1;
+       border-bottom-left-radius: 9.5rem;
+       border-top-left-radius: 9.5rem;
+    }
+ 
+    &__container {
+       padding: 9.0625rem 0 4.78125rem 0;
+ 
+       @media screen and (min-width: 769px) {
+          padding: 12.1875rem 0 2.90625rem 0;
+       }
+    }
+ 
+    &__wrapper {
+        @media screen and (min-width: 769px) {
+          display: flex;
+          flex-direction: row-reverse;
+       }
+    }
+}

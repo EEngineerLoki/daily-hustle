@@ -18,6 +18,7 @@ export const shopData = [
         peace.`,
         author: `Ryan Holiday`,
         button: `Order Now`,
+        link:`https://www.facebook.com/matthew.loquinerio/`
     },
     {
         cover: AtomicHabit,

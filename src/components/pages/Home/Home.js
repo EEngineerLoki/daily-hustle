@@ -20,7 +20,7 @@ const Home = ({
              <p className="home__paragraph paragraph">{paragraph}</p>
              <div className="home__cta__wrapper">
                <button className="hero__cta btn btn--blue btn--intro">
-                 {chrome}
+                 <Link to='/blog'>{chrome}</Link>
                 </button>
                 <button className="hero__cta btn btn--blue btn--intro">
                  <Link to='/contact'>{firefox}</Link>

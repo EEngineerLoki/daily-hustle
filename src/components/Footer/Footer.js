@@ -22,13 +22,13 @@ const Footer = () => {
                      <Link to='/contact'>Contact</Link>
                   </li>
                   <li className="footer__icon">
-                     <a href="/"><FacebookIcon/></a>
+                     <a href="/contact"><FacebookIcon/></a>
                      <div className="footer__item">
                         facebook.com/DailyHustl3
                      </div>
                   </li>
                   <li className="footer__icon">
-                     <a href="/"><InstagramIcon/></a>
+                     <a href="/contact"><InstagramIcon/></a>
                      <div className="footer__item">
                         https://www.instagram.com/dailyhustle24_7/
                      </div>

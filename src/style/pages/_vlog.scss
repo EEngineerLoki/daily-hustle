@@ -1,0 +1,193 @@
+.blog {
+    position: relative;
+    padding: 0 2rem 0;
+    background: var(--homeGradient);
+ 
+    &::before {
+       position: absolute;
+       content: '';
+       left: 0;
+       // bottom: clamp(196px, 37vw, 345px);
+       bottom: 14.25rem;
+       background-color: var(--softBlue);
+       height: clamp(12.375rem, 30vw, 22.1875rem);
+       width: clamp(19.6875rem, 40vw, 46rem);
+       z-index: -1;
+       border-bottom-right-radius: 9.5rem;
+       border-top-right-radius: 12.5rem;
+ 
+       @media screen and (min-width: 769px) {
+          bottom: 2.5625rem;
+       }
+    }
+ 
+    &__container {
+       display: flex;
+       flex-direction: column;
+       padding: 3.96875rem 0 3.75rem 0;
+    }
+ 
+    &__heading {
+       text-align: center;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       margin-top: 10rem;
+       padding-bottom: 1rem;
+
+       @media screen and (max-width: 769px) {
+          margin-top: 3rem;
+      }
+    }
+ 
+    &__title {
+       font-weight: var(--fontSemiBold);
+       font-size: clamp(3.5625rem, 6vw, 2.1875rem);
+       font-family: var(--fontParagraph);
+    }
+ 
+    &__paragraph {
+       line-height: 1.75rem;
+       font-size: clamp(0.875rem, 3vw, 1.125rem);
+       max-width: 31.875rem;
+    }
+ 
+    &__wrapper {
+       display: flex;
+       flex-direction: column;
+       margin-top: 1.5rem;
+    }
+ 
+    &__button {
+       display: flex;
+       flex-direction: column;
+ 
+       @media screen and (min-width: 769px) {
+          flex-direction: row;
+          width: 70%;
+          margin: auto;
+       }
+ 
+       &__tabs-active {
+          position: relative;
+          color: var(--secondary) !important;
+ 
+          &::after {
+             position: absolute;
+             content: '';
+             background-color: var(--secondary);
+             width: 100%;
+             left: 0;
+             height: 0.2875rem;
+             bottom: -0.35rem;
+             animation: tabsActive 800ms ease-in-out;
+          }
+       }
+ 
+       &__tabs {
+          border: none;
+          cursor: pointer;
+          position: relative;
+          transition: background-color 0.3s, border 0.3s ease-in;
+          background-color: transparent;
+          padding: 1.25rem 0;
+          color: #8d8a8a;
+          width: 100%;
+          border-top: 1px solid #edeff8;
+          font-weight: var(--fontSemiBold);
+ 
+          &:focus {
+             outline: none;
+          }
+ 
+          &:focus-visible {
+             outline: 2px solid var(--softRed);
+             outline-offset: 3px;
+          }
+ 
+          @media screen and (min-width: 769px) {
+             border-top: unset;
+             border-bottom: 1px solid #edeff8;
+             font-size: 1.0625rem;
+          }
+ 
+          &:last-child {
+             border-bottom: 1px solid #edeff8;
+          }
+ 
+          &:hover {
+             color: var(--white);
+             transition: 350ms;
+          }
+       }
+    }
+
+    &__cta__wrapper {
+       font-family: var(--fontParagraph);
+       display: flex;
+       justify-content: center;
+    }
+ 
+    &__content {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+ 
+       @media screen and (min-width: 769px) {
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          height: 25.625rem;
+       }
+ 
+       &.transitioning &__illustration {
+          animation: backgroundSlide 800ms ease-in-out;
+       }
+ 
+       &.transitioning &__info {
+          animation: infoSlide 800ms ease-in-out;
+       }
+
+       &__mainwrapper {
+
+          @media screen and (min-width: 769px) {
+            margin-top: 3rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 10rem;
+          }
+
+         &__illustration {
+            width: 18rem;
+         }
+   
+         &__info {
+            padding-top: 3.625rem;
+            width: 100%;
+            text-align: center;
+   
+            @media screen and (min-width: 769px) {
+               width: 50%;
+               text-align: center;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+            }
+         }
+   
+         &__paragraph {
+            font-size: 1.1375rem;
+            line-height: 1.925rem;
+
+            @media screen and (max-width: 769px) {
+               font-size: 0.8375rem;
+            }
+         }
+
+       }
+    }
+ }
