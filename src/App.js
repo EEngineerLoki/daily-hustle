@@ -14,6 +14,7 @@ import {
    blogData,
    shopData,
    contactData,
+   booksData
 } from './data';
 
 import Books from './components/pages/Blog/Books/Books';
@@ -27,7 +28,7 @@ const App = () => {
         <Routes>
            <Route path='/' element={<Home {...homeData}/>}></Route>
            <Route path='blog' element={<Blog {...blogData}/>}></Route>
-           <Route path='blog/reviews' element={<Books/>}></Route>
+           <Route path='blog/reviews' element={<Books {...booksData}/>}></Route>
            <Route path='blog/careers' element={<Books/>}></Route>
            <Route path='blog/health' element={<Books/>}></Route>
            <Route path='shop' element={<Shop {...shopData}/>}></Route>

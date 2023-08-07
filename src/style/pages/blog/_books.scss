@@ -2,6 +2,7 @@
     position: relative;
     padding: 0 2rem 0;
     background: var(--homeGradient);
+    display: flex;
  
     &::before {
        position: absolute;
@@ -15,6 +16,24 @@
        border-bottom-left-radius: 9.5rem;
        border-top-left-radius: 9.5rem;
     }
+
+    &__sidebar {
+        width: 20%;
+        margin-top: 7rem;
+        color: var(--secondary);
+
+        .sidebar {
+            width: 100%;
+            height: 80%;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.14);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(8.1px);
+            -webkit-backdrop-filter: blur(8.1px);
+            border: 1px solid rgba(255, 255, 255, 0.45);
+        }
+    }
  
     &__container {
        padding: 9.0625rem 0 4.78125rem 0;
@@ -25,9 +44,48 @@
     }
  
     &__wrapper {
-        @media screen and (min-width: 769px) {
-          display: flex;
-          flex-direction: row-reverse;
-       }
+        color: white;
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+    }
+
+    &__contents {
+        width: 100%;
+        font-family: var(--fontParagraph);
+        padding: 1rem;
+    }
+
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .title {
+            font-size: 5rem;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-size: 2rem;
+        }
+    }
+
+    &__underTitle {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    &__review {
+        text-align: justify;
+    }
+
+    &__image {
+        width: 50%;
+        display: flex;
+        justify-content: center;
     }
 }
+
