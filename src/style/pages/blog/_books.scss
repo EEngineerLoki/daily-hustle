@@ -80,12 +80,21 @@
 
     &__review {
         text-align: justify;
+        line-height: 2.5rem;
     }
 
     &__image {
-        width: 50%;
         display: flex;
         justify-content: center;
+        width: 50%;
+
+        img {
+            width: 100%;
+
+            @media screen and (min-width: 769px){
+                max-height: 45rem;
+            }
+        }
     }
 }
 
