@@ -5,3 +5,4 @@ export { default as newsData } from './newsData';
 export { default as shopData } from './shopData';
 export { default as contactData } from './contactData';
 export { default as booksData } from './booksdata';
+export { default as sidebarData} from './sidebarData';
